@@ -1,0 +1,57 @@
+{
+  "_comment": "FireSpot V3.0 - DeerFlow extensions_config.json 模板",
+  "_instructions": "将此文件内容合并到您的 DeerFlow extensions_config.json 中",
+
+  "mcpServers": {
+    "wechat-publisher": {
+      "enabled": true,
+      "type": "sse",
+      "command": null,
+      "args": [],
+      "env": {},
+      "url": "http://localhost:3101/sse",
+      "headers": {},
+      "oauth": null,
+      "description": "FireSpot 微信公众号发布服务器 - 上传图片、创建草稿、发布文章"
+    },
+    "xhs-publisher": {
+      "enabled": false,
+      "type": "sse",
+      "command": null,
+      "args": [],
+      "env": {},
+      "url": "http://localhost:3102/sse",
+      "headers": {},
+      "oauth": null,
+      "description": "FireSpot 小红书发布服务器 - 需要第三方 API 支持"
+    },
+    "douyin-publisher": {
+      "enabled": false,
+      "type": "sse",
+      "command": null,
+      "args": [],
+      "env": {},
+      "url": "http://localhost:3103/sse",
+      "headers": {},
+      "oauth": null,
+      "description": "FireSpot 抖音发布服务器 - 需要第三方 API 支持"
+    }
+  },
+
+  "skills": {
+    "_comment": "FireSpot 技能将在安装时自动配置",
+    "firespot": {
+      "enabled": true,
+      "_description": "微信公众号内容创作专家技能 - 7阶段标准化工作流"
+    }
+  },
+
+  "_installation_notes": {
+    "step1": "1. 复制 FireSpot skill 文件到 DeerFlow skills/public/firespot/",
+    "step2": "2. 复制 MCP 服务器文件到 DeerFlow mcp-servers/wechat/",
+    "step3": "3. 配置环境变量（参考 .env.template）",
+    "step4": "4. 合并此配置到 extensions_config.json",
+    "step5": "5. 启动 MCP 服务器",
+    "step6": "6. 在 DeerFlow 中使用 FireSpot 技能"
+  }
+}
