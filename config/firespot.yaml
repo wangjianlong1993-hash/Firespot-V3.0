@@ -1,0 +1,6 @@
+name: firespot
+description: FireSpot 4.0 - AI-powered content research, creation, and publishing agent with auto-trigger capabilities
+graph: firespot_agent
+model: null
+tool_groups: null
+skills: null
