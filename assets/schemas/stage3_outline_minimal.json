@@ -1,0 +1,50 @@
+{
+  "title_options": [
+    {
+      "type": "悬念体",
+      "title": "备选标题1",
+      "characteristics": "引人入胜"
+    },
+    {
+      "type": "数字体",
+      "title": "备选标题2",
+      "characteristics": "结构清晰"
+    },
+    {
+      "type": "共情体",
+      "title": "备选标题3",
+      "characteristics": "情感连接"
+    }
+  ],
+  "recommended_title": "推荐标题",
+  "hook": "开篇钩子（50-80字）",
+  "sections": [
+    {
+      "section_id": "section_1",
+      "heading": "小标题1",
+      "key_point": "核心内容（1-2句话）",
+      "word_count_target": 300,
+      "content_elements": ["要点1", "要点2"],
+      "transition": "过渡方式",
+      "image_asset_ref": "inline_01"
+    }
+  ],
+  "conclusion": "结语方向（50-100字）",
+  "cta": "行动号召",
+  "estimated_word_count": 1200,
+  "publishing_plan": {
+    "cover": {
+      "asset_id": "cover_01",
+      "role": "cover",
+      "insert_anchor": "article_cover",
+      "description": "封面图描述",
+      "style": "设计风格",
+      "aspect_ratio": "2.35:1",
+      "required": true,
+      "upload_policy": "thumb",
+      "source_type": "generate",
+      "prompt": "英文提示词"
+    },
+    "images": []
+  }
+}

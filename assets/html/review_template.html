@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} - FireSpot 审核稿</title>
+    <style>
+      /* ==================== FireSpot HTML Output Template v5.1 ==================== */
+      /* 提炼自：oura_ring_case_study_review.html */
+      /* 设计理念：专业、现代、学术风格，去AI化设计 */
+
+      /* 全局重置与基础样式 */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        background: #f5f5f5;
+        color: #333;
+        line-height: 1.8;
+      }
+
+      /* ==================== 审核头部区域 ==================== */
+      .review-header {
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+      }
+      .review-header::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #16213e;
+      }
+      .review-header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
+      .review-header .subtitle {
+        font-size: 14px;
+        color: #8892b0;
+      }
+      .review-badge {
+        display: inline-block;
+        background: #00c853;
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 12px;
+      }
+
+      /* ==================== 主容器 ==================== */
+      .container {
+        max-width: 680px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        overflow: hidden;
+      }
+
+      /* ==================== 元数据栏 ==================== */
+      .meta-bar {
+        background: #fafbfc;
+        padding: 16px 24px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 13px;
+        color: #666;
+      }
+      .meta-bar span { display: inline-flex; align-items: center; gap: 4px; }
+      .meta-bar .label { color: #999; }
+
+      /* ==================== 正文内容区域 ==================== */
+      .content {
+        padding: 32px 24px;
+      }
+
+      /* H2 章节标题样式 */
+      .content h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin: 32px 0 16px;
+        padding-left: 12px;
+        border-left: 4px solid #e91e63;
+      }
+      .content h2:first-of-type { margin-top: 0; }
+
+      /* 正文段落样式 */
+      .content p {
+        font-size: 15px;
+        line-height: 1.9;
+        margin-bottom: 16px;
+        text-align: justify;
+      }
+
+      /* 粗体文本样式 */
+      .content strong {
+        color: #1a1a2e;
+        font-weight: 600;
+      }
+
+      /* ==================== 图片占位符样式 ==================== */
+      .img-placeholder {
+        background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+        border: 2px dashed #90caf9;
+        border-radius: 8px;
+        padding: 32px;
+        text-align: center;
+        margin: 20px 0;
+        color: #1565c0;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .img-placeholder .icon {
+        font-size: 24px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      /* ==================== 引用标记样式 ==================== */
+      .citation {
+        color: #999;
+        font-size: 12px;
+        text-decoration: none;
+        vertical-align: super;
+        line-height: 0;
+      }
+      .citation:hover { color: #e91e63; }
+
+      /* ==================== 结语区域样式 ==================== */
+      .closing {
+        margin-top: 24px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+      }
+      .closing p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      /* ==================== 审核底部 ==================== */
+      .review-footer {
+        background: #fafbfc;
+        padding: 20px 24px;
+        border-top: 1px solid #eee;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+      }
+
+      /* ==================== 参考来源区域 ==================== */
+      .sources-section {
+        max-width: 680px;
+        margin: 0 auto 40px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        padding: 24px;
+      }
+      .sources-section h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+        padding-left: 10px;
+        border-left: 3px solid #e91e63;
+      }
+      .sources-section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sources-section li {
+        font-size: 12px;
+        color: #666;
+        padding: 6px 0;
+        border-bottom: 1px solid #f5f5f5;
+        line-height: 1.6;
+      }
+      .sources-section li:last-child { border-bottom: none; }
+      .sources-section a {
+        color: #1565c0;
+        text-decoration: none;
+      }
+      .sources-section a:hover { text-decoration: underline; }
+
+      /* ==================== 响应式设计 ==================== */
+      @media (max-width: 768px) {
+        .review-header h1 { font-size: 20px; }
+        .container { margin: 20px; border-radius: 8px; }
+        .content { padding: 24px 16px; }
+        .content h2 { font-size: 16px; }
+        .content p { font-size: 14px; }
+      }
+    </style>
+</head>
+<body>
+
+<!-- ==================== 审核头部 ==================== -->
+<div class="review-header">
+  <h1>{{ARTICLE_TITLE}}</h1>
+  <div class="subtitle">{{SUBTITLE}} · 审核稿</div>
+  <div class="review-badge">{{VALIDATION_STATUS}}</div>
+</div>
+
+<!-- ==================== 主容器 ==================== -->
+<div class="container">
+  <!-- 元数据栏 -->
+  <div class="meta-bar">
+    <span><span class="label">字数：</span>{{WORD_COUNT}}</span>
+    <span><span class="label">引用：</span>{{CITATION_COUNT}}</span>
+    <span><span class="label">配图：</span>{{IMAGE_COUNT}}</span>
+    <span><span class="label">状态：</span>{{STATUS}}</span>
+  </div>
+
+  <!-- 正文内容 -->
+  <div class="content">
+
+    <!-- 封面图占位符 -->
+    <div class="img-placeholder">
+      <span class="icon">📷</span>
+      {{COVER_IMAGE_DESCRIPTION}}
+    </div>
+
+    <!-- 开篇段落 -->
+    <p>{{LEAD_PARAGRAPH}}</p>
+
+    <!-- 第一部分 -->
+    <h2>{{SECTION_1_TITLE}}</h2>
+
+    <div class="img-placeholder">
+      <span class="icon">📊</span>
+      {{SECTION_1_IMAGE_DESCRIPTION}}
+    </div>
+
+    <p>{{SECTION_1_CONTENT_1}}</p>
+    <p>{{SECTION_1_CONTENT_2}}</p>
+    <p>{{SECTION_1_KEY_INSIGHT}}</p>
+
+    <!-- 第二部分 -->
+    <h2>{{SECTION_2_TITLE}}</h2>
+
+    <div class="img-placeholder">
+      <span class="icon">⚖️</span>
+      {{SECTION_2_IMAGE_DESCRIPTION}}
+    </div>
+
+    <p>{{SECTION_2_CONTENT_1}}</p>
+    <p>{{SECTION_2_CONTENT_2}}</p>
+    <p>{{SECTION_2_CONTENT_3}}</p>
+
+    <!-- 第三部分 -->
+    <h2>{{SECTION_3_TITLE}}</h2>
+
+    <div class="img-placeholder">
+      <span class="icon">📈</span>
+      {{SECTION_3_IMAGE_DESCRIPTION}}
+    </div>
+
+    <p>{{SECTION_3_CONTENT_1}}</p>
+    <p>{{SECTION_3_CONTENT_2}}</p>
+
+    <!-- 结语区域 -->
+    <div class="closing">
+      <h2>写在最后</h2>
+      <p>{{CONCLUSION_1}}</p>
+      <p>{{CONCLUSION_2}}</p>
+      <p>{{CONCLUSION_CTA}}</p>
+    </div>
+
+  </div>
+
+  <!-- 审核底部 -->
+  <div class="review-footer">
+    {{FOOTER_TEXT}}
+  </div>
+</div>
+
+<!-- ==================== 参考来源区域 ==================== -->
+<div class="sources-section">
+  <h3>信源引用（{{CITATION_COUNT}}处）</h3>
+  <ul>
+    {{REFERENCES_LIST}}
+  </ul>
+</div>
+
+</body>
+</html>

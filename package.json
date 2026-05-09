@@ -1,0 +1,150 @@
+{
+  "name": "firespot",
+  "version": "7.2.0",
+  "description": "微信公众号内容创作Agent技能 - 9阶段标准化工作流，支持ZhipuArts MCP专业生图和自动发布",
+  "author": "FireSpot Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/firespot.git"
+  },
+  "homepage": "https://github.com/your-org/firespot#readme",
+  "bugs": {
+    "url": "https://github.com/your-org/firespot/issues"
+  },
+  "keywords": [
+    "wechat",
+    "content-creation",
+    "ai-agent",
+    "anthropic-skill",
+    "zhipuarts",
+    "glm-image",
+    "automated-publishing",
+    "公众号",
+    "内容创作",
+    "AI写作"
+  ],
+  "categories": [
+    "Content Creation",
+    "WeChat",
+    "AI Agent",
+    "Social Media"
+  ],
+  "skill": {
+    "name": "firespot v7.2",
+    "type": "content-creation",
+    "version": "7.2.0",
+    "trigger_keywords": [
+      "公众号",
+      "推文",
+      "文章创作",
+      "内容创作",
+      "写文章",
+      "撰写",
+      "firespot",
+      "firespot"
+    ],
+    "excluded_keywords": [
+      "简短问答",
+      "技术排查",
+      "数据分析"
+    ],
+    "workflow_stages": 9,
+    "output_files": 3,
+    "mcp_tools": {
+      "required": [
+        "zhipuarts"
+      ],
+      "optional": [
+        "wechat-publisher"
+      ]
+    },
+    "python_version": ">=3.12",
+    "platform": "anthropic-claude-agent"
+  },
+  "features": {
+    "research": {
+      "enabled": true,
+      "platforms": [
+        "微信公众号",
+        "小红书",
+        "B站",
+        "抖音",
+        "YouTube",
+        "X (Twitter)",
+        "TikTok"
+      ]
+    },
+    "content_creation": {
+      "style": "advanced-tech-promotional",
+      "word_count": {
+        "min": 800,
+        "max": 2000,
+        "default": 1200
+      },
+      "anti_ai_patterns": true
+    },
+    "image_generation": {
+      "enabled": true,
+      "provider": "zhipuarts",
+      "model": "glm-image",
+      "style": "professional-tech"
+    },
+    "publishing": {
+      "enabled": true,
+      "platforms": [
+        "wechat"
+      ]
+    }
+  },
+  "assets": {
+    "prompts": 3,
+    "templates": 2,
+    "schemas": 1,
+    "scripts": 4
+  },
+  "documentation": {
+    "main": "SKILL.md",
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "references": 9
+  },
+  "dependencies": {
+    "mcp_tools": {
+      "zhipuarts": ">=1.0.0",
+      "wechat-publisher": ">=1.0.0"
+    },
+    "python_packages": {
+      "anthropic": ">=0.7.0"
+    }
+  },
+  "changelog": {
+    "current_version": "7.2.0",
+    "release_date": "2026-05-09",
+    "major_changes": [
+      "移除排版设计工作流",
+      "从10阶段调整为9阶段",
+      "新增ZhipuArts MCP专业生图"
+    ],
+    "improvements": [
+      "优化工作流阶段分离",
+      "增强MCP工具使用指南",
+      "更新所有相关文档"
+    ],
+    "removed": [
+      "阶段6排版预览功能",
+      "layout_config.json配置文件",
+      "generate_layout.py脚本",
+      "layout_template.html模板",
+      "layout_guide.md参考文档"
+    ]
+  },
+  "metadata": {
+    "created_at": "2026-05-09",
+    "updated_at": "2026-05-09",
+    "maintainer": "FireSpot Team",
+    "status": "active",
+    "stability": "stable",
+    "documentation_language": "zh-CN"
+  }
+}
