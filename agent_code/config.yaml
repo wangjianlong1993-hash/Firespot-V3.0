@@ -1,0 +1,6 @@
+name: firespot
+description: 'FireSpot 7.1 - AI-powered content research, creation, and publishing agent with high-quality writing style. Features: Real cases over fictional examples, specific data over vague descriptions, vivid details over abstract summaries. 2-round review workflow. Auto-generate images after text approval, then merge for final preview.'
+graph: firespot_agent
+model: null
+tool_groups: null
+skills: null

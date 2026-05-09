@@ -1,0 +1,231 @@
+# FireSpot 图片生成 Prompt 模板
+
+本文档包含三种图片类型的标准 Prompt 模板，用于 ModelArts MCP 图片生成。
+
+## 📸 封面图 Prompt 模板
+
+### 英文版（推荐）
+
+```
+Create a professional, modern cover image for a tech article.
+
+Title: {article_title}
+Style: Clean, minimalist, tech-focused
+Elements: Abstract AI/technology symbols
+Colors: Blue, purple, or dark theme
+Aspect ratio: {aspect_ratio}  # 默认 2.35:1
+Composition: Centralized composition with clear focal point
+Mood: Professional, innovative, trustworthy
+
+Visual Elements:
+- Abstract geometric shapes (circles, lines, nodes)
+- Subtle data visualization elements
+- Layered depth with foreground/background
+- Clean typography space for title overlay
+- Gradient background (blue to purple)
+```
+
+### 中文版
+
+```
+创建一张专业、现代的科技文章封面图。
+
+文章标题：{article_title}
+风格：简洁、极简主义、科技感
+元素：抽象AI/技术符号、几何图形
+配色：蓝色、紫色或深色主题
+比例：{aspect_ratio}  # 默认 2.35:1
+构图：中心构图，清晰的焦点
+氛围：专业、创新、可信赖
+
+视觉元素：
+- 抽象几何图形（圆圈、线条、节点）
+- 细致的数据可视化元素
+- 前景/背景的层次深度
+- 标题叠加的简洁排版空间
+- 渐变背景（蓝色到紫色）
+```
+
+## 🖼️ 正文图 Prompt 模板
+
+### 英文版（推荐）
+
+```
+Create a simple illustration for a tech article section.
+
+Section: {section_title}
+Content: {section_content}
+Style: Minimalist, professional diagram or icon
+Colors: Complementary to cover, professional palette
+Aspect ratio: {aspect_ratio}  # 默认 16:9
+Purpose: Visual aid to help readers understand the concept
+Detail level: Clean and uncluttered, focus on clarity
+
+Visual Style:
+- Flat design with subtle gradients
+- Simple iconography
+- Limited color palette (2-3 colors)
+- Clear visual hierarchy
+- White space for readability
+```
+
+### 中文版
+
+```
+为科技文章的章节创建简单的插图。
+
+章节标题：{section_title}
+内容概要：{section_content}
+风格：极简主义、专业图表或图标
+配色：与封面图协调的专业配色方案
+比例：{aspect_ratio}  # 默认 16:9
+目的：帮助读者理解概念的可视化辅助
+细节：清晰不杂乱，重点突出
+
+视觉风格：
+- 扁平设计带微妙渐变
+- 简洁的图标符号
+- 有限配色方案（2-3种颜色）
+- 清晰的视觉层次
+- 留白增强可读性
+```
+
+## 💎 金句图 Prompt 模板
+
+### 英文版（推荐）
+
+```
+Create an elegant quote image for a tech article.
+
+Quote text: {quote_text}
+Author: {author}
+Style: Editorial design, typography-focused
+Colors: Subtle gradient background, high contrast text
+Aspect ratio: {aspect_ratio}  # 默认 4:5
+Layout: Centered text with generous white space
+Mood: Insightful, inspiring, memorable
+
+Typography:
+- Large, readable quote text
+- Elegant serif or sans-serif font
+- Center-aligned
+- Line breaks for emphasis
+- Author attribution at bottom
+```
+
+### 中文版
+
+```
+为科技文章创建优雅的引用图。
+
+引用文字：{quote_text}
+作者：{author}
+风格：编辑设计，以排版为核心
+配色：柔和渐变背景，高对比度文字
+比例：{aspect_ratio}  # 默认 4:5
+布局：居中文字，充足的留白
+氛围：有洞察力、启发人心、印象深刻
+
+排版设计：
+- 大号易读的引用文字
+- 优雅的衬线或无衬线字体
+- 居中对齐
+- 换行强调重点
+- 底部标注作者
+```
+
+## 🎨 通用设计原则
+
+### 配色建议
+
+**科技主题**：
+- 主色：#2b5797（蓝色）
+- 辅色：#e91e63（粉红）
+- 背景：渐变（#1a1a2e → #16213e）
+
+**商业主题**：
+- 主色：#00c853（绿色）
+- 辅色：#ffc107（琥珀色）
+- 背景：浅灰（#f5f5f5）
+
+**学术主题**：
+- 主色：#333333（深灰）
+- 辅色：#666666（中灰）
+- 背景：白色（#ffffff）
+
+### 构图原则
+
+1. **中心构图**：主要元素居中，四周留白
+2. **三分法则**：重要元素放在 1/3 位置
+3. **引导线**：使用线条引导视线
+4. **层次感**：前景、中景、背景分明
+
+### 字体建议
+
+**英文**：
+- 无衬线：Helvetica, Arial, San Francisco
+- 衬线：Georgia, Times New Roman
+- 代码：Monaco, Consolas
+
+**中文**：
+- 无衬线：苹方、思源黑体、微软雅黑
+- 衬线：宋体、思源宋体
+- 标题：粗体，大字号
+
+## 📋 使用示例
+
+### 示例 1：封面图
+
+```
+Create a professional, modern cover image for a tech article about AI ethics.
+
+Title: 起底 Oura Ring：一枚戒指估值110亿
+Style: Clean, minimalist, tech-focused
+Elements: Abstract ring symbol, data visualization elements (growth curves)
+Colors: Blue gradient background (#1a1a2e to #16213e)
+Aspect ratio: 2.35:1
+Composition: Ring symbol in center, growth curves in background
+Mood: Professional, data-driven, innovative
+```
+
+### 示例 2：正文图
+
+```
+Create a simple illustration for a tech article section about smart ring market growth.
+
+Section: 110亿估值的数字密码
+Content: Valuation growth from $2.55B to $11B in 3 years
+Style: Minimalist line chart
+Colors: Blue (#2b5797) with green (#00c853) upward trend
+Aspect ratio: 16:9
+Purpose: Visualize growth data
+Detail level: Clean chart with grid lines, labeled milestones
+```
+
+### 示例 3：金句图
+
+```
+Create an elegant quote image for a tech article.
+
+Quote text: "可穿戴赛道的价值锚点正在从「卖设备」转向「卖持续数据服务」"
+Author: FireSpot AI Analysis
+Style: Editorial design, bold white text on gradient
+Colors: Gradient from #1a1a2e to #e91e63
+Aspect ratio: 4:5
+Layout: Centered, 2-3 lines per segment
+Mood: Insightful, memorable, shareable
+```
+
+## ⚠️ 注意事项
+
+1. **使用英文 Prompt**：ModelArts 对英文 Prompt 理解更好
+2. **具体描述**：避免模糊描述，使用具体的关键词
+3. **保持简洁**：不需要过长，5-8 行通常足够
+4. **测试迭代**：生成后检查效果，调整 Prompt 重新生成
+5. **品牌一致**：所有图片保持风格一致性
+
+---
+
+**模板版本**：v7.1
+**最后更新**：2026-05-06
+**参考文档**：references/image_asset_guide.md
