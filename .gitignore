@@ -25,6 +25,27 @@ venv/
 ENV/
 env/
 
+# Environment Variables (CRITICAL!)
+.env
+.env.*
+*.env
+.env.local
+.env.*.local
+*.key
+*.secret
+*credentials*
+*api_key*
+*api_key
+
+# API Keys and Secrets (CRITICAL!)
+sk-*
+sk_*
+API_KEY*
+SECRET_KEY*
+PRIVATE_KEY*
+AUTH_TOKEN*
+OAUTH_TOKEN*
+
 # IDE
 .vscode/
 .idea/
@@ -44,3 +65,29 @@ htmlcov/
 
 # Logs
 *.log
+
+# Node modules (if any)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
